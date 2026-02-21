@@ -1,0 +1,201 @@
+{
+  "app": {
+    "name": "MAIVÉ POS",
+    "tagline": "The essence of your renaissance"
+  },
+  "nav": {
+    "pos": "Point of Sale",
+    "inventory": "Inventory",
+    "sales": "Sales",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "noResults": "No results",
+    "all": "All",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "pos": {
+    "title": "Point of Sale",
+    "searchPlaceholder": "Search for an item...",
+    "categories": {
+      "all": "View All",
+      "totes": "Totes",
+      "mini_bags": "Mini Bags",
+      "pochettes": "Clutches",
+      "epaule": "Shoulder",
+      "bandouliere": "Crossbody",
+      "soiree": "Evening"
+    },
+    "cart": {
+      "title": "Current Order",
+      "empty": "Your cart awaits your next piece...",
+      "itemCount": "{{count}} item",
+      "itemCount_plural": "{{count}} items",
+      "subtotal": "Subtotal",
+      "discount": "Discount",
+      "total": "TOTAL",
+      "checkout": "Checkout",
+      "clear": "Clear",
+      "clearConfirm": "Clear the cart?",
+      "negotiatedPrice": "Negotiated Price",
+      "reasonRequired": "Reason required",
+      "addDiscount": "Add Discount",
+      "removeItem": "Remove",
+      "quantity": "Quantity"
+    },
+    "product": {
+      "outOfStock": "Out of Stock",
+      "lowStock": "Low Stock",
+      "inStock": "In Stock",
+      "addToCart": "Add"
+    }
+  },
+  "checkout": {
+    "title": "Complete Order",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash",
+    "card": "Card",
+    "mobile": "Mobile Payment",
+    "total": "Total to Pay",
+    "amountTendered": "Amount Tendered",
+    "change": "Change Due",
+    "quickAmounts": {
+      "500": "500",
+      "1000": "1,000",
+      "2000": "2,000",
+      "5000": "5,000",
+      "10000": "10,000",
+      "exact": "Exact Amount"
+    },
+    "confirm": "Confirm Payment",
+    "success": {
+      "title": "Sale Successful",
+      "message": "The transaction has been recorded",
+      "printReceipt": "Print Receipt",
+      "newSale": "New Sale"
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "products": "Products",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "sku": "SKU",
+    "name": "Name",
+    "category": "Category",
+    "price": "Price",
+    "stock": "Stock",
+    "variants": "Variants",
+    "lowStock": "Low Stock",
+    "outOfStock": "Out of Stock",
+    "form": {
+      "name": "Name",
+      "nameEn": "Name (EN)",
+      "description": "Description",
+      "category": "Category",
+      "basePrice": "Base Price",
+      "costPrice": "Cost Price",
+      "sku": "SKU",
+      "barcode": "Barcode",
+      "lowStockThreshold": "Low Stock Threshold"
+    }
+  },
+  "sales": {
+    "title": "Sales History",
+    "transaction": "Transaction",
+    "reference": "Reference",
+    "date": "Date",
+    "customer": "Customer",
+    "total": "Total",
+    "paymentMethod": "Payment",
+    "status": "Status",
+    "statuses": {
+      "completed": "Completed",
+      "refunded": "Refunded",
+      "partial_refund": "Partial Refund",
+      "voided": "Voided"
+    },
+    "refund": {
+      "title": "Refund",
+      "reason": "Refund Reason",
+      "full": "Full Refund",
+      "partial": "Partial Refund",
+      "confirm": "Confirm Refund"
+    },
+    "filters": {
+      "today": "Today",
+      "week": "This Week",
+      "month": "This Month",
+      "custom": "Custom"
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "dailySummary": "Daily Summary",
+    "revenue": "Revenue",
+    "transactions": "Transactions",
+    "avgBasket": "Average Basket",
+    "topProducts": "Top Products",
+    "paymentMethods": "Payment Methods",
+    "drawer": "Cash Drawer",
+    "salesChart": "14-Day Sales"
+  },
+  "settings": {
+    "title": "Settings",
+    "business": {
+      "title": "Business Information",
+      "name": "Name",
+      "phone": "Phone",
+      "address": "Address",
+      "receiptFooter": "Receipt Footer"
+    },
+    "cashiers": {
+      "title": "Cashier Management",
+      "add": "Add Cashier",
+      "name": "Name",
+      "pin": "PIN Code",
+      "role": "Role",
+      "roles": {
+        "admin": "Administrator",
+        "cashier": "Cashier"
+      }
+    },
+    "printer": {
+      "title": "Printer",
+      "test": "Test Print",
+      "select": "Select Printer"
+    },
+    "language": {
+      "title": "Language",
+      "fr": "Français",
+      "en": "English"
+    },
+    "backup": {
+      "title": "Backup",
+      "export": "Export Database",
+      "success": "Backup successful"
+    }
+  },
+  "shortcuts": {
+    "title": "Keyboard Shortcuts",
+    "f1": "Clear Cart",
+    "f2": "Search",
+    "f4": "Checkout",
+    "esc": "Close Modal",
+    "ctrlD": "Discount"
+  }
+}

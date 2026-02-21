@@ -1,0 +1,201 @@
+{
+  "app": {
+    "name": "MAIVÉ Caisse",
+    "tagline": "L'essence de votre renaissance"
+  },
+  "nav": {
+    "pos": "Caisse",
+    "inventory": "Inventaire",
+    "sales": "Ventes",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "loading": "Chargement...",
+    "noResults": "Aucun résultat",
+    "all": "Tout",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "pos": {
+    "title": "Caisse",
+    "searchPlaceholder": "Rechercher un article...",
+    "categories": {
+      "all": "Tout voir",
+      "totes": "Totes",
+      "mini_bags": "Mini Bags",
+      "pochettes": "Pochettes",
+      "epaule": "Épaule",
+      "bandouliere": "Bandoulière",
+      "soiree": "Soirée"
+    },
+    "cart": {
+      "title": "Commande en cours",
+      "empty": "Votre panier attend votre prochaine pièce...",
+      "itemCount": "{{count}} article",
+      "itemCount_plural": "{{count}} articles",
+      "subtotal": "Sous-total",
+      "discount": "Remise",
+      "total": "TOTAL",
+      "checkout": "Finaliser",
+      "clear": "Effacer",
+      "clearConfirm": "Vider le panier ?",
+      "negotiatedPrice": "Prix négocié",
+      "reasonRequired": "Motif requis",
+      "addDiscount": "Ajouter une remise",
+      "removeItem": "Retirer",
+      "quantity": "Quantité"
+    },
+    "product": {
+      "outOfStock": "Épuisé",
+      "lowStock": "Stock faible",
+      "inStock": "En stock",
+      "addToCart": "Ajouter"
+    }
+  },
+  "checkout": {
+    "title": "Finaliser la commande",
+    "paymentMethod": "Mode de paiement",
+    "cash": "Espèces",
+    "card": "Carte bancaire",
+    "mobile": "Paiement mobile",
+    "total": "Total à payer",
+    "amountTendered": "Montant remis",
+    "change": "Monnaie à rendre",
+    "quickAmounts": {
+      "500": "500",
+      "1000": "1 000",
+      "2000": "2 000",
+      "5000": "5 000",
+      "10000": "10 000",
+      "exact": "Montant exact"
+    },
+    "confirm": "Confirmer le paiement",
+    "success": {
+      "title": "Vente réussie",
+      "message": "La transaction a été enregistrée",
+      "printReceipt": "Imprimer le reçu",
+      "newSale": "Nouvelle vente"
+    }
+  },
+  "inventory": {
+    "title": "Inventaire",
+    "products": "Produits",
+    "addProduct": "Ajouter un produit",
+    "editProduct": "Modifier le produit",
+    "sku": "SKU",
+    "name": "Nom",
+    "category": "Catégorie",
+    "price": "Prix",
+    "stock": "Stock",
+    "variants": "Variantes",
+    "lowStock": "Stock faible",
+    "outOfStock": "Rupture de stock",
+    "form": {
+      "name": "Nom",
+      "nameEn": "Nom (EN)",
+      "description": "Description",
+      "category": "Catégorie",
+      "basePrice": "Prix de base",
+      "costPrice": "Prix de revient",
+      "sku": "SKU",
+      "barcode": "Code-barres",
+      "lowStockThreshold": "Seuil de stock faible"
+    }
+  },
+  "sales": {
+    "title": "Historique des ventes",
+    "transaction": "Transaction",
+    "reference": "Référence",
+    "date": "Date",
+    "customer": "Client",
+    "total": "Total",
+    "paymentMethod": "Paiement",
+    "status": "Statut",
+    "statuses": {
+      "completed": "Complétée",
+      "refunded": "Remboursée",
+      "partial_refund": "Remb. partielle",
+      "voided": "Annulée"
+    },
+    "refund": {
+      "title": "Rembourser",
+      "reason": "Motif du remboursement",
+      "full": "Remboursement total",
+      "partial": "Remboursement partiel",
+      "confirm": "Confirmer le remboursement"
+    },
+    "filters": {
+      "today": "Aujourd'hui",
+      "week": "Cette semaine",
+      "month": "Ce mois",
+      "custom": "Personnalisé"
+    }
+  },
+  "reports": {
+    "title": "Rapports",
+    "dailySummary": "Résumé journalier",
+    "revenue": "Chiffre d'affaires",
+    "transactions": "Transactions",
+    "avgBasket": "Panier moyen",
+    "topProducts": "Top produits",
+    "paymentMethods": "Modes de paiement",
+    "drawer": "Caisse",
+    "salesChart": "Ventes sur 14 jours"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "business": {
+      "title": "Informations de l'entreprise",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "receiptFooter": "Pied de page du reçu"
+    },
+    "cashiers": {
+      "title": "Gestion des caissiers",
+      "add": "Ajouter un caissier",
+      "name": "Nom",
+      "pin": "Code PIN",
+      "role": "Rôle",
+      "roles": {
+        "admin": "Administrateur",
+        "cashier": "Caissier"
+      }
+    },
+    "printer": {
+      "title": "Imprimante",
+      "test": "Test d'impression",
+      "select": "Sélectionner l'imprimante"
+    },
+    "language": {
+      "title": "Langue",
+      "fr": "Français",
+      "en": "English"
+    },
+    "backup": {
+      "title": "Sauvegarde",
+      "export": "Exporter la base de données",
+      "success": "Sauvegarde réussie"
+    }
+  },
+  "shortcuts": {
+    "title": "Raccourcis clavier",
+    "f1": "Vider le panier",
+    "f2": "Rechercher",
+    "f4": "Finaliser",
+    "esc": "Fermer la fenêtre",
+    "ctrlD": "Remise"
+  }
+}

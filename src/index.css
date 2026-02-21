@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* MAIVÉ Brand Colors */
+    --maive-cream: #F5F0E8;
+    --maive-warm-white: #FDFAF5;
+    --maive-parchment: #EDE5D4;
+    --maive-camel: #C4956A;
+    --maive-camel-dark: #A67848;
+    --maive-camel-light: #E8D4B8;
+    --maive-noir: #1A1611;
+    --maive-charcoal: #3D3530;
+    --maive-muted: #8A7D72;
+    --maive-gold: #BFA16B;
+    --maive-gold-light: #D4B98A;
+
+    /* shadcn/ui theme overrides */
+    --background: 40 33% 95%;
+    --foreground: 30 20% 9%;
+    --card: 40 50% 98%;
+    --card-foreground: 30 20% 9%;
+    --popover: 40 50% 98%;
+    --popover-foreground: 30 20% 9%;
+    --primary: 32 39% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 30% 90%;
+    --secondary-foreground: 30 20% 9%;
+    --muted: 38 30% 90%;
+    --muted-foreground: 30 10% 48%;
+    --accent: 38 30% 90%;
+    --accent-foreground: 30 20% 9%;
+    --destructive: 0 40% 38%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 38 20% 82%;
+    --input: 38 20% 82%;
+    --ring: 32 39% 59%;
+    --radius: 0.5rem;
+    --sidebar-background: 40 50% 98%;
+    --sidebar-foreground: 30 20% 20%;
+    --sidebar-primary: 32 39% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 38 30% 90%;
+    --sidebar-accent-foreground: 30 20% 9%;
+    --sidebar-border: 38 20% 82%;
+    --sidebar-ring: 32 39% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background-color: var(--maive-cream);
+    color: var(--maive-noir);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Typography */
+  .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  
+  .font-body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+  }
+
+  /* Brand color utilities */
+  .bg-maive-cream { background-color: var(--maive-cream); }
+  .bg-maive-warm-white { background-color: var(--maive-warm-white); }
+  .bg-maive-parchment { background-color: var(--maive-parchment); }
+  .bg-maive-camel { background-color: var(--maive-camel); }
+  .bg-maive-camel-dark { background-color: var(--maive-camel-dark); }
+  .bg-maive-noir { background-color: var(--maive-noir); }
+  
+  .text-maive-camel { color: var(--maive-camel); }
+  .text-maive-noir { color: var(--maive-noir); }
+  .text-maive-muted { color: var(--maive-muted); }
+  .text-maive-gold { color: var(--maive-gold); }
+  .text-maive-charcoal { color: var(--maive-charcoal); }
+  
+  .border-maive-camel { border-color: var(--maive-camel); }
+  .border-maive-parchment { border-color: var(--maive-parchment); }
+
+  /* Border radius */
+  .rounded-maive-xs { border-radius: 2px; }
+  .rounded-maive-sm { border-radius: 4px; }
+  .rounded-maive-md { border-radius: 8px; }
+  .rounded-maive-lg { border-radius: 12px; }
+
+  /* Shadows */
+  .shadow-maive-xs { box-shadow: 0 1px 3px rgba(26,22,17,0.06); }
+  .shadow-maive-sm { box-shadow: 0 2px 8px rgba(26,22,17,0.08); }
+  .shadow-maive-md { box-shadow: 0 4px 20px rgba(26,22,17,0.10); }
+  .shadow-maive-lg { box-shadow: 0 12px 40px rgba(26,22,17,0.14); }
+  .shadow-maive-gold { box-shadow: 0 2px 12px rgba(196,149,106,0.25); }
+
+  /* Button styles */
+  .btn-maive {
+    @apply font-body font-medium rounded-maive-sm transition-all duration-200;
+  }
+  
+  .btn-maive:hover {
+    @apply transform -translate-y-0.5;
+    box-shadow: var(--shadow-maive-sm);
+  }
+
+  /* Input styles */
+  .input-maive {
+    @apply bg-maive-warm-white border border-maive-parchment rounded-maive-sm font-body transition-all;
+  }
+  
+  .input-maive:focus {
+    @apply outline-none border-maive-camel;
+    box-shadow: 0 0 0 3px rgba(196, 149, 106, 0.15);
+  }
+
+  /* Card styles */
+  .card-maive {
+    @apply bg-maive-warm-white border border-maive-parchment rounded-maive-md;
+    box-shadow: var(--shadow-maive-sm);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--maive-parchment);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--maive-camel-light);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--maive-camel);
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.22s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.22s ease forwards;
+  }
+  
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Price display */
+  .price-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  /* Focus ring */
+  .focus-ring:focus-visible {
+    @apply outline-none;
+    box-shadow: 0 0 0 2px var(--maive-camel), 0 0 0 4px var(--maive-cream);
+  }
+}
